@@ -1,22 +1,32 @@
-/* Estilos para o menu de navegação */
-nav ul {
-    list-style-type: none;
+body{
+    background-image: url("img/20220620_160317.jpg");
+    background-size: cover;
     padding: 0;
-    display: flex;
-    gap: 20px;
 }
+
+nav ul li {
+    display: inline;
+    font-weight: bold;
+    background-color: #080808;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
 
 nav ul li {
     display: inline;
     font-weight: bold;
 }
 
-/* Estilos para a seção principal */
+
 section {
+    font-weight: bold;
     margin: 20px;
+    color: black;
 }
 
-/* Estilos para o formulário */
+
 form {
     margin: 20px 0;
 }
@@ -25,7 +35,38 @@ fieldset {
     margin-bottom: 15px;
 }
 
-/* Estilos para as imagens */
+
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+nav ul li {
+    display: inline;
+    font-weight: bold;
+}
+
+
+section {
+    margin: 20px;
+}
+
+
+form {
+    margin: 20px 0;
+}
+
+fieldset {
+    margin-bottom: 15px;
+}
+
+
 figure {
     display: inline-block;
     margin: 10px;
