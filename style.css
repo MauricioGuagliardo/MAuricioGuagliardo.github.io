@@ -1,0 +1,38 @@
+/* Estilos para o menu de navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+    font-weight: bold;
+}
+
+/* Estilos para a seção principal */
+section {
+    margin: 20px;
+}
+
+/* Estilos para o formulário */
+form {
+    margin: 20px 0;
+}
+
+fieldset {
+    margin-bottom: 15px;
+}
+
+/* Estilos para as imagens */
+figure {
+    display: inline-block;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}

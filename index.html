@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praia de concreto</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="bg-primary text-white py-3 mb-4">
+        <nav class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#">Surf Ferrugem</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Garopaba Centro</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Praia do Rosa</a></li>
+            </ul>
+        </nav>
+        <div class="text-center">
+            <h1>Vida de um SURFISTA!</h1>
+        </div>
+    </header>
+
+    <!-- Story Section -->
+    <section class="container">
+        <h2 class="mb-3">Olá, eu sou um surfista da cidade</h2>
+        <p>Minha história no surf é cheia de momentos marcantes, e tudo começou quando eu tinha 8 anos de idade...</p>
+
+        <!-- Image Gallery -->
+        <div class="row">
+            <div class="col-md-3">
+                <figure>
+                    <img src="img/_EDY6317.JPG" alt="Surf na praia do Rosa" class="img-fluid">
+                    <figcaption>Surf na praia do Rosa</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <img src="img/_EDY6319 1.JPG" alt="Surf na praia do Rosa" class="img-fluid">
+                    <figcaption>Surf na praia do Rosa</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <img src="img/IMG_3788 20x30 1.jpg" alt="Surf na praia do Rosa" class="img-fluid">
+                    <figcaption>Surf na praia do Rosa</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-3">
+                <figure>
+                    <img src="img/IMG_3789 1 1.jpg" alt="Surf na praia do Rosa" class="img-fluid">
+                    <figcaption>Surf na praia do Rosa</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Table -->
+    <section class="container my-4">
+        <h2>Lugares que vou conhecer</h2>
+        <p>Muitos lugares a destacar, mas coloquei somente os que me deixam mais animados.</p>
+        <table class="table table-striped">
+            <caption>Praias</caption>
+            <thead class="table-dark">
+                <tr>
+                    <th>Sonhos realizados</th> 
+                    <th>Sim/Não</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Peru, Lobitos</td>
+                    <td>Sim</td>
+                </tr>
+                <tr>
+                    <td>Indonésia, Nias</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>Marrocos, Boilers</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>Costa Rica, Toda</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>Brasil, Regência</td>
+                    <td>Não</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulário de Escolha de Praia -->
+    <section class="container my-4">
+        <h2>Formulário de Escolha de Praia</h2>
+        <form action="submit_reserva.php" method="post">
+            <!-- Dados Pessoais -->
+            <fieldset class="mb-3">
+                <legend>Dados Pessoais</legend>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+            </fieldset>
+
+            <!-- Escolha da Praia -->
+            <fieldset class="mb-3">
+                <legend>Escolha a praia</legend>
+                <div class="form-check">
+                    <input type="checkbox" id="lobitos" name="praia[]" value="Peru, Lobitos" class="form-check-input">
+                    <label for="lobitos" class="form-check-label">Peru, Lobitos</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="nias" name="praia[]" value="Indonésia, Nias" class="form-check-input">
+                    <label for="nias" class="form-check-label">Indonésia, Nias</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="boilers" name="praia[]" value="Marrocos, Boilers" class="form-check-input">
+                    <label for="boilers" class="form-check-label">Marrocos, Boilers</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="toda" name="praia[]" value="Costa Rica, Toda" class="form-check-input">
+                    <label for="toda" class="form-check-label">Costa Rica, Toda</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" id="regencia" name="praia[]" value="Brasil, Regência" class="form-check-input">
+                    <label for="regencia" class="form-check-label">Brasil, Regência</label>
+                </div>
+            </fieldset>
+
+            <!-- Medo de Ondas Grandes -->
+            <fieldset class="mb-3">
+                <legend>Você teria medo de surfar ondas grandes?</legend>
+                <div class="form-check">
+                    <input type="radio" id="medo_sim" name="medo_ondas" value="Sim" class="form-check-input" required>
+                    <label for="medo_sim" class="form-check-label">Sim</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="medo_nao" name="medo_ondas" value="Não" class="form-check-input">
+                    <label for="medo_nao" class="form-check-label">Não</label>
+                </div>
+            </fieldset>
+
+            <!-- Desculpa -->
+            <fieldset class="mb-3">
+                <legend>Qual seria a desculpa por ver as ondas grandes?</legend>
+                <select id="reacao" name="reacao" class="form-select" required>
+                    <option value="dor_de_barriga">Dor de barriga</option>
+                    <option value="precisa_trabalhar">Precisa ir trabalhar</option>
+                </select>
+            </fieldset>
+
+            <!-- Botão de Envio -->
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>Desenvolvido por Maurício</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+   
+    <script src="index.js"></script>
+</body>
+</html>
